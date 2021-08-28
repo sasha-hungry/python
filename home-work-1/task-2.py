@@ -1,9 +1,11 @@
-raw_time = input('input time: ')
+#!/usr/bin/env python
+
+raw_time = input('input time in second: ')
+
 hours = int(raw_time) // 3600
 minutes = (int(raw_time) % 3600) // 60
 seconds = (int(raw_time) % 3600) % 60
-print(hours)
-print(minutes)
-print(seconds)
 
-out_time = print('hours,':',minutes,':',seconds)
+
+out_time = print(f"{hours:02d}:{minutes:02d}:{seconds:02d}" )
+
