@@ -11,8 +11,6 @@ my_input_list = list(input('введите элементы последоват
 
 print(my_input_list)
 
-k = 0
-
 for k in range(0, len(my_input_list) - 1, 2):
     my_input_list[k], my_input_list[k + 1] = my_input_list[k + 1], my_input_list[k]
 
