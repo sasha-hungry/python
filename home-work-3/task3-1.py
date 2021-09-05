@@ -7,9 +7,12 @@
 '''
 
 def division(arg_1, arg_2):
-    return(arg_1 / arg_2)
+    if int(arg_2) == 0:
+        return('на ноль делить нельзя')
+    else:
+        return(int(arg_1) / int(arg_2))
 
-a = int(input('please input number1: '))
-b = int(input('please input number2: '))
+a = input('please input number1: ')
+b = input('please input number2: ')
 
 print(division(a, b))
