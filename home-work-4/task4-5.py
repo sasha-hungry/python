@@ -15,7 +15,7 @@ def multiplication(arg1, arg2):
 
 input_list = [ element for element in range(100, 1001)]
 
-# вариант со свей функцией
+# вариант со своей функцией
 result = reduce(multiplication, input_list)
 print(result)
 
