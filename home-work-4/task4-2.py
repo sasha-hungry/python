@@ -17,7 +17,7 @@ for i in range(1, len(input_list)):
     if input_list[i] > input_list[i-1]:
         output_list.append(input_list[i])
 
-# вариант через генератор, но ИМХО сильно сложнее в понимании заложенной логики
+# вариант в одну строчку, но ИМХО сильно сложнее в понимании заложенной логики
 
 output_list2 = [ element for i, element in enumerate(input_list) if  input_list[i] > input_list[i - 1] and i > 0 ]
 
