@@ -12,7 +12,7 @@
 from itertools import count, cycle
 
 
-start_num = int(input('введите старотовое цисло: '))
+start_num = int(input('введите стартовое цисло: '))
 stop_num = int(input('введите последнее число: '))
 
 
