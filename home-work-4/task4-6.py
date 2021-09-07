@@ -31,7 +31,7 @@ print (30 * '_' + '\n')
 
 i = 1
 input_el = input('введите итерируемый элемент: ')
-input_counter = input('введите число циклов; ')
+input_counter = input('введите число циклов: ')
 for el in cycle(input_el):
     if i > int(input_counter):
         break
