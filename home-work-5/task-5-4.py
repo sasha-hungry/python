@@ -11,13 +11,13 @@ Four — 4
 Новый блок строк должен записываться в новый текстовый файл.
 
 '''
-translater = { '1':'Один',  '2':'Два', '3':'Три', '4':'Четыре' }
+translate = { '1':'Один',  '2':'Два', '3':'Три', '4':'Четыре' }
 
 in_f = open('my_file_task4_input.txt','r')
 out_f = open('my_file_task4_out.txt', 'w')
 for line in in_f:
     in_list = line.split()
-    print(translater[in_list[2]], ' - ', in_list[2], file = out_f)
+    print(translate[in_list[2]], ' - ', in_list[2], file = out_f)
    
 in_f.close()
 out_f.close()
