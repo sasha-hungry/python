@@ -15,6 +15,7 @@ translate = { '1':'Один',  '2':'Два', '3':'Три', '4':'Четыре' }
 
 in_f = open('my_file_task4_input.txt','r')
 out_f = open('my_file_task4_out.txt', 'w')
+
 for line in in_f:
     in_list = line.split()
     print(translate[in_list[2]], ' - ', in_list[2], file = out_f)

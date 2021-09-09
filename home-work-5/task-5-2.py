@@ -20,12 +20,3 @@ print( f'кол-во строк: {i - 1}')
 
 print ('кол-во слов в каждой строке в формате № строки: кол-во слов \n' )
 print (count)
-
-'''
-my_f = open('my_file_task2.txt','r')
-for line in my_f:
-    print(line)
-'''
-
-        
-        
