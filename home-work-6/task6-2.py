@@ -15,9 +15,9 @@ class Road:
     _length = 0
     _width = 0
     
-    def __init__(self, _length, _width):
-        self._length = _length
-        self._width = _width
+    def __init__(self, length, width):
+        self._length = length
+        self._width = width
         
         
     def mass_calc(self):
