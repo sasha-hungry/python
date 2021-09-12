@@ -10,11 +10,7 @@
 '''
 
 
-class Road:
-    
-    _length = 0
-    _width = 0
-    
+class Road:    
     def __init__(self, length, width):
         self._length = length
         self._width = width
