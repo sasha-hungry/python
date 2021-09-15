@@ -36,23 +36,18 @@ class Matrix:
     '''
     
     def __str__(self):
-        return  '\n'.join(['   '.join([str(row_el) for row_el in row]) for row in self.mtrx ]) + '\n'
-          
-        '''
-        можно через 2 цикла for и перебор каждого элемента, со сборокий строки через \n и пробелы в строках, например:
-        row_str = '\n'.join(['   '.join([str(row_el) for row_el in row1]) for row1 in self.mtrx ]) 
-        Тут даже можно регулировать расстояние между столбцами, но я через неделю не вспомню как это работает.
-        Какой вариант более правильный? 
-        '''
+        return  '\n'.join(['   '.join([str(row_el) for row_el in row]) for row in self.mtrx ]) + '\n' # хочется сделать через форматирование строк, но не понимаю как задать шаблон для матриц разного размера
         
         
     def __add__(self, add_mtrx):
         result_mtrx = []
         if len(self.mtrx) == len(add_mtrx.mtrx) and len(self.mtrx[0]) == len(add_mtrx.mtrx[0]):
             for row_index in range(len(self.mtrx)):
+                result_mtrx_row =[]
                 for row_el_index in range(len(self.mtrx[row_index])):
-                    self.mtrx[row_index][row_el_index] = self.mtrx[row_index][row_el_index] + add_mtrx.mtrx[row_index][row_el_index]
-            return Matrix(self.mtrx)            
+                    result_mtrx_row.append(self.mtrx[row_index][row_el_index] + add_mtrx.mtrx[row_index][row_el_index])
+                result_mtrx.append(result_mtrx_row) # наверное как то можно более компактно, но я не могу пока придумать.
+            return Matrix(result_mtrx)            
         else:
             return(' Сложение матриц разного размера невозможно ')
    
@@ -68,7 +63,9 @@ B = Matrix(mtrx2)
 
 print(A)
 print(B)
+D = A + B + A
 
+print(D)
 
 print(A + B )
 
