@@ -41,8 +41,8 @@ class Cell:
     def make_order(self, elemets_row = 5):
         self.elemets_row = elemets_row
         k = ''
-        out_string = ''.join([k + elemets_row * '*' + '\n' for i in range(self.cell // self.elemets_row )]) + '*' * (self.cell % elemets_row) +'\n'
-        return out_string
+        return ''.join([k + elemets_row * '*' + '\n' for i in range(self.cell // self.elemets_row )]) + '*' * (self.cell % elemets_row) +'\n'
+
 
 
 A = Cell(17)
