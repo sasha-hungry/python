@@ -27,13 +27,6 @@ class Matrix:
     def __init__(self, mtrx):
         self.mtrx = mtrx
         
-    '''
-    def __str__(self):
-        row_str = ''
-        for row in self.mtrx:
-            row_str = row_str + str(row).replace(",", "").strip('[]') + '\n'
-        return row_str
-    '''
     
     def __str__(self):
         return  '\n'.join(['   '.join([str(row_el) for row_el in row]) for row in self.mtrx ]) + '\n' # хочется сделать через форматирование строк, но не понимаю как задать шаблон для матриц разного размера
