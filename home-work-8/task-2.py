@@ -7,11 +7,11 @@
 '''
 
 class MyExceptionDivisionZerro(Exception):
-    
+    '''
     def __init__(self, a, b):
         self.a = a
         self.b = b
-    
+    '''
     @staticmethod
     def my_div(a,b):
         try:
