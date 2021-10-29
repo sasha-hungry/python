@@ -12,4 +12,3 @@ elif int(proceeds) == int(costs):
     print('похоже ничего не заработали, но и расходов нет')
 else: 
     print('Убыток!!!')
-
