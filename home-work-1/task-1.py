@@ -27,3 +27,4 @@ print (number2, type(number2))
 
 print(number + number2)
 print(string + string2)
+

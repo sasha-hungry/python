@@ -8,4 +8,3 @@ seconds = (int(raw_time) % 3600) % 60
 
 
 out_time = print(f"{hours:02d}:{minutes:02d}:{seconds:02d}" )
-
